@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr/>
+    <h2 align="Center">Welcome</h2>
+    <hr/>
+    <script type ="text/javascript">
+        var name;
+        name="javascript";
+        age="44"
+        document.write(typeof name);
+        document.write("<br/>");
+        let num=1025;
+        document.wrtie(typeof num);
+        document.write("<br/>")
+        const greet=Symbol('hello');
+        document.write(typeof greet);
+    </script>
+</body> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type ="text/javascript">
+       function fun(){
+        var name= document.getElementById("name").value;
+        var age=document.getElementById("age").value;
+        const student={
+          name:name,
+          age:age,  
+        };
+        document.getElementById("spn").innerHTML="Hello"+name+" "+age;
+        document.getElementById("spn").style.backgroundColor="green";
+        document.getElementById("spn").style.color="#fff";
+       }
+    </script>
+    
+</head>
+<body>
+  <table cellpadding="10"cellspacing="0"align="center">
+<tr>
+        <td>Name</td>
+        <td><input type="text" id="name"/></td>
+</tr>
+<tr>
+    <td>Age</td>
+    <td><input type="text"id="age"/></td>
+</tr>
+<tr>
+    <td colspan="2" style="text-align: center;">
+    <input type="button"name="btn" value="Get Detail"onclick="fun()"/></td>
+</tr>
+<tr>
+    <td colspan="2" style="text-align: center;">
+    <span id="spn"></span>
+    </td>
+</tr>
+  </table>
+</body>

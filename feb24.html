@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type ="text/javascript">
+       function fun(){
+        var name= document.getElementById("name").value;
+        var age=document.getElementById("age").value;
+        const student={
+          name:name,
+          age:age,  
+        };
+        document.getElementById("spn").innerHTML="Hello"+name+" "+mobile+""+Email+""+Address+""+city+""+Remark+"";
+        document.getElementById("spn").style.backgroundColor="green";
+        document.getElementById("spn").style.color="#fff";
+       }
+    </script>
+    
+</head>
+
+<body>
+  <table style="border:2px solid black  ;" cellpadding="10"cellspacing=""align="center">
+   
+   <tr>
+        <td>Name</td>
+        <td><input type="text" id="name"/></td>
+</tr>
+<tr>
+    <td>Mobile</td>
+    <td><input type="text"id="Mobile"/></td>
+</tr>
+<tr>
+    <td>Email</td>
+    <td><input type="text"id="Email"/></td>
+</tr>
+<tr>
+    <td>Address</td>
+    <td><textarea rows="2" cols="30"id="Address"></textarea></td>
+</tr>
+<tr>
+    <td>City</td>
+    <td><select>
+         <option>--Select</option>
+         <option>agra</option>
+         <option>Delhi</option>
+    </select></td>
+  
+</tr>
+<tr>
+    <td>Remark</td>
+    <td><input type="text"id="Remark"/></td>
+</tr>
+<tr>
+    <td colspan="2" style="text-align: center;">
+    <input type="button"name="btn" value="Get Detail"onclick="fun()"/></td>
+</tr>
+<tr>
+    <td colspan="2" style="text-align: center;">
+    <span id="spn"></span>
+    </td>
+</tr>
+  </table>
+</body>
